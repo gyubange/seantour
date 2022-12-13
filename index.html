@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바다여행</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- XEICON에서 링크 가져와서 넣기/"https:"추가 확인하기-->
+
+    <style>
+        /* 나눔 스퀘어 */
+        @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+        /* 나눔바른고딕 */
+        @font-face {
+            font-family: 'NanumBarunGothic';
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+            src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'NanumBarunGothic';
+            font-style: normal;
+            font-weight: 700;
+            src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+            src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+        }
+
+        @font-face {
+            font-family: 'NanumBarunGothic';
+            font-style: normal;
+            font-weight: 300;
+            src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+            src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            color: #333;
+            line-height: 1;
+            font-family: 'NanumBarunGothic';
+            font-weight: 400;
+            /* 전체 */
+        }
+
+        /* 로고 메뉴 👌 */
+
+        header {
+            width: 1280px;
+            margin: 0 auto;
+            height: 100px;
+            line-height: 100px;
+            display: flex;
+            justify-content: space-between; /* 양 끝 정렬 */
+            object-fit: cover;
+        }
+        header h1 a img{
+            width: 190px;
+        }
+        header ul li{
+            list-style: none;
+            display: inline-block;
+        }
+        header ul li a{
+            text-decoration: none;
+            color: #333;
+            font-size: 17px;
+            margin-left: 40px;
+        }
+        .main_visual {
+            height: 700px;
+        }
+        .main_visual video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* calss 01 시작😒 */
+
+        .cont01 {
+            background-color: #9cdbe9;
+            padding: 100px 0;
+            /* 뒷배경 */
+        }
+        .cont01 .inner {
+            width: 1280px;
+            margin: 0 auto;
+
+        }
+        .cont01 .inner .title h3 {
+            font-size: 35px;
+            text-align: center;
+            font-family: 'NanumSquare';
+            font-weight: 800;
+            /* 테마여행[글자] */
+        }
+        .cont01 .inner .title p {
+            font-size: 20px;
+            text-align: center;
+            margin: 20px 0 40px; /* 위 좌우 아래 간격 */
+            /* 바다여행의 테마별 여행코스~[글자] */
+        }
+        .cont01 .inner .list {
+            display: flex ; /* [그림사진] 가로 정렬 */
+            justify-content: space-between; /* 양쪽 동일 여백 */
+            box-sizing: border-box; 
+            margin-top: 40px;
+            /* 그림과 글자 */
+        }
+        .cont01 .inner .list div {
+            width: 308px;
+            border-radius: 20px;
+            background-color: #fff;
+        }
+        .cont01 .inner .list div img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        }
+        .cont01 .inner .list div ul {
+            padding: 20px; /* 글자와 그림 사이에 간격 */
+            font-size: 20px;
+        }
+        .cont01 .inner .list div ul li {
+            margin-top: 10px;
+            list-style: none;
+        }
+        .cont01 .inner .list div ul li:nth-child(1){
+            font-size: 22px;
+            font-family: 'NanumSquare';
+            font-weight: 700;
+            margin-bottom: 25px;
+            /* 테마 글자 크기, 두께 */
+        }
+
+
+       /* calss 02 시작 😒 */
+
+        .cont02 {
+            padding: 100px 0;
+            background-color: aquamarine;
+        }
+        .cont02 .inner{
+            width: 1280px;
+            margin: 0 auto;
+        }
+        .cont02 .inner .title h3{
+            font-size: 35px;
+            text-align: center;
+            font-family: 'NanumSquare';
+            font-weight: 800;
+        }
+        .cont02 .inner .title p{
+            font-size: 20px;
+            text-align: center;
+            margin: 20px 0 40px;
+            font-family: 'NanumSquareAc';
+            font-weight: 600;
+        }
+        .cont02 .inner .list{
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin-top: 40px;
+        }
+        .cont02 .inner .list div{
+            width: 308px;
+        }
+
+        .cont02 .inner .list figure{
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .cont02 .inner .list div:hover img{
+            transform: scale(1.5);
+            transition: 0.3s;
+        }
+        /* 마우스 클릭시 화면 커짐 효과 / 효과 지정할 곳
+        확대 배율
+        커지는데 걸리는 시간 */
+        .cont02 .inner .list ul{
+            padding: 15px;
+            font-size: 20px;
+        }
+        .cont02 .inner .list li{
+            list-style: none;
+        }
+        .cont02 .inner .list li:nth-child(1){
+            font-size: 22px;
+            font-family: 'NanumSquare';
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        .cont02 .inner .list li:nth-child(2){
+            font-size: 18px;
+            font-family: 'NanumSquare';
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .cont02 .inner .list li i{
+            font-size: 20px;
+            color: blue;
+        }
+
+        /* footer ✔*/
+        footer{
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+        }
+        footer .inner{
+            width: 1280px;
+            margin: 0 auto;
+        }
+        footer .inner ul li{
+            display: inline-block;
+            list-style: none;
+            margin-right: 30px;
+            font-size: 15px;
+        }
+        footer .inner p{
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.664) ;
+            margin-top: 30px;
+        }
+
+
+        /* li 속성 블릿 없에기, list-style : none; */
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="#">
+                <img src="이미지/logo-seantour.svg" alt="바다여행">
+            </a>
+        </h1>
+        <ul>
+            <li><a href="#">추천여행</a></li>
+            <li><a href="#">어촌체험휴향마을</a></li>
+            <li><a href="#">여행정보</a></li>
+            <li><a href="#">공유바다</a></li>
+        </ul>
+    </header>
+    <section class="main_visual">
+        <video autoplay muted loop> <!-- 비디오 자동 재생, 음소거, 반복재생-->
+            <!-- controls : 재생 컨트롤 바 보여주기 -->
+            <source src="이미지/비디오.mp4" type="video/mp4"/> <!-- 비디오 넣기 -->
+        </video>
+
+
+    </section><!-- main_visual end -->
+
+    <section class="cont01">
+        <div class="inner">
+            <div class="title">
+                <h3>테마 여행</h3>
+                <p>바다여행의 테마별 여행코스를 만나보세요</p>
+            </div> <!-- .title end -->
+            <div class="list">
+                <div>
+                    <IMg src="이미지/cont01_img01.png" alt="겨울강릉바다" />
+                    <UL>
+                        <LI>힐링과 함께 하는 바다 여행</LI>
+                        <li>바다와 힐링</li>
+                    </UL>
+                </div> <!-- 1 -->
+
+                <div>
+                    <IMg src="이미지/cont01_img02.png" alt="제부도 섬" />
+                    <UL>
+                        <LI>섬과 함께 하는 바다 여행</LI>
+                        <li>섬과 생활</li>
+                    </UL>
+                </div> <!-- 2 -->
+
+                <div>
+                    <IMg src="이미지/cont01_img03.png" alt="선착장" />
+                    <UL>
+                        <LI>음식과 함께 하는 바다 여행</LI>
+                        <li>음식과 여행</li>
+                    </UL>
+                </div> <!-- 3 -->
+
+                <div>
+                    <IMg src="이미지/cont01_img04.png" alt="등대" />
+                    <UL>
+                        <LI>등대와 함께 하는 바다 여행</LI>
+                        <li>등대와 역사</li>
+                    </UL>
+                </div> <!-- 4 -->
+
+            </div> <!-- .list end -->
+
+        </div> <!-- .inner end -->
+    </section> <!-- .con1 end -->
+
+     <section class="cont02">
+        <div class="inner">
+            <div class="title">
+                <h3>어촌체험휴양마을</h3>
+                <P>바다여행에서 추천하는 체험마을을 만나보세요.</P>
+            </div> <!-- .title end -->
+            <div class="list">
+
+                <div>
+                    <figure> <!-- 이미지, 영상등을 감싸는 태그 -->
+                       <img src="이미지/cont02_img01.png" alt="갯벌"/> 
+                    </figure>
+                    <ul>
+                        <li>서해갯벌과 함께하는 마을체험 </li>
+                        <!-- 아이콘, xeicon에서 붙혀넣기 i태그 넣고 아이콘 넣기 -->
+                        <li><i class="xi-maker-drop"></i> 충청남도 보령시 대천해수욕장</li>
+                    </ul>
+                </div> <!-- 1 -->
+
+                <div>
+                    <figure> <!-- 이미지, 영상등을 감싸는 태그 -->
+                       <img src="이미지/cont02_img02.png" alt="순천만"/> 
+                    </figure>
+                    <ul>
+                        <li>자연과 함께 하는 마을체험 </li>
+                        <!-- 아이콘, xeicon에서 붙혀넣기 i태그 넣고 아이콘 넣기 -->
+                        <li><i class="xi-maker-drop"></i> 전라남도 순천시 순천만</li>
+                    </ul>
+                </div> <!-- 2 -->
+
+                <div>
+                    <figure> <!-- 이미지, 영상등을 감싸는 태그 -->
+                       <img src="이미지/cont02_img03.png" alt="호미곶"/> 
+                    </figure>
+                    <ul>
+                        <li>일출과 함께하는 마을체험 </li>
+                        <!-- 아이콘, xeicon에서 붙혀넣기 i태그 넣고 아이콘 넣기 -->
+                        <li><i class="xi-maker-drop"></i> 경상북도 포항시 호미곶</li>
+                    </ul>
+                </div> <!-- 3 -->
+
+                <div>
+                    <figure> <!-- 이미지, 영상등을 감싸는 태그 -->
+                       <img src="이미지/cont02_img04.png" alt="독도"/> 
+                    </figure>
+                    <ul>
+                        <li>역사와 함께 하는 마을체험 </li>
+                        <!-- 아이콘, xeicon에서 붙혀넣기 i태그 넣고 아이콘 넣기 -->
+                        <li><i class="xi-maker-drop"></i> 경상북도 울릉군 독도</li>
+                    </ul>
+                </div> <!-- 4 -->
+
+            </div><!-- .list end -->
+        </div> <!-- .inner end -->
+
+     </section> <!-- .cont02 end -->
+
+     <!-- 마무리 밑에 넣는거 -->
+     <footer>
+        <div class="inner">
+            <ul>
+                <li>바다여행소개</li>
+                <li>이메일무단수집거부</li>
+                <li>저작권보호정책</li>
+            </ul>
+            <p>한국어촌어항공단 : (08588) 서울특별시 금천구 가산디지털2로 53 한라시그마밸리 12층
+               <br> 고객센터 : 080-500-8579 (파도친구) 
+                    평일 09:00 ~ 18:00, 점심시간 12:00 ~ 13:00
+            </P>
+        </div><!-- .inner end -->
+
+     </footer>
+
+</body>
+
+</html>
